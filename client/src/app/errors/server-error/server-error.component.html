@@ -1,0 +1,20 @@
+<div class="text-center mt-5">
+    <h1>Internal Server Error</h1>
+</div>
+<div class="container mt-5">
+    <ng-container *ngIf="error">
+        <h4 class="text-danger">Error: {{error.message}}</h4>
+        <p class="font-weight-weight">Angular application is working fine. 
+            But there is a problem in the server side code.</p>
+            <p>What to do next?</p>
+        <ol>
+            <li>Open the chrome dev tool.</li>
+            <li>Inspect the Network tab.</li>
+            <li>Check the failing request.</li>
+            <li>Examine the request Url - Make sure it is correct.</li>
+            <li>Reproduce the error in postman - If we see the same problem, then the issue is not with Angular.  </li>
+        </ol>   
+        <p>Following is the stack trace - this is where your investigation should start!</p> 
+        <code class="mt-5">{{error.details}}</code>
+    </ng-container>
+</div>

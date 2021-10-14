@@ -1,0 +1,11 @@
+.dropdown-toggle, .dropdown-item
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+img {
+    max-width: 50px;
+    border: 1px solid #ffffff;
+    display: inline;
+    border-radius: 50%;
+}
